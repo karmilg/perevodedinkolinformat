@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="src/icons/i.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Конвертер единиц количества информации</title>
+</head>
+<body>
+    <form action="index.html">
+        <button class="container_button">Назад</button>
+       </form>
+    <div class="container">
+        <h1 class="h1_title">Конвертер единиц количества информации</h1>
+        <div class="input-group">
+            <input type="number" id="inputValue">
+            <select id="fromUnit">
+                <option value="бит">Бит</option>
+                <option value="байт">Байт</option>
+                <option value="килобайт">Килобайт</option>
+                <option value="мегабайт">Мегабайт</option>
+                <option value="гигабайт">Гигабайт</option>
+                <option value="терабайт">Терабайт</option>
+                <option value="петабайт">Петабайт</option>
+            </select>
+            <span>=</span>
+            <select id="toUnit">
+               <option value="бит">Бит</option>
+                <option value="байт">Байт</option>
+                <option value="килобайт">Килобайт</option>
+                <option value="мегабайт">Мегабайт</option>
+                <option value="гигибайт">Гигабайт</option>
+                <option value="терабайт">Терабайт</option>
+                <option value="петабайт">Петабайт</option>
+            </select>
+        </div>
+        <button onclick="convert()">Перевести</button> 
+        <div id="result"></div>
+    </div> 
+    <script src="script.js" type="text/JavaScript"></script>
+    <script src="/src/js/script.js" type="text/JavaScript"></script>  
+</body>
+</html>
